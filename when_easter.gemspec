@@ -21,6 +21,8 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "bin/when_easter",
+    "bin/when_greek_easter",
+    "bin/when_roman_easter",
     "lib/when_easter.rb",
     "when_easter.gemspec"
   ]
