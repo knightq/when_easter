@@ -1,6 +1,6 @@
 class EasterDates
   #Todo: implement Greek Easter date finding algorhythm.
-  def find(year = nil)
+  def self.find(year = nil)
     date = self.roman_easter(year)
     return "In the year #{date.year}, the Roman easter is on #{date.strftime("%d %B")}."
   end
@@ -31,5 +31,6 @@ class EasterDates
       Time.local(year,3,e+21)
     else
       Time.local(year,4,e-10)
+    end
   end
 end
