@@ -21,6 +21,7 @@ If you want to find only one date, you can also try
 or
 
 	$ when_greek_easter
+	
 ### License
 
 Released under the MIT license.
