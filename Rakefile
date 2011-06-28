@@ -5,10 +5,10 @@ begin
   Jeweler::Tasks.new do |gemspec|
     gemspec.name= "easter-dates"
     gemspec.summary = "Get the date of Roman and Greek Easter"
-    gemspec.description = "Easy and reusable"
+    gemspec.description = "A tool that calculates the dates of Roman and Greek Easter."
     gemspec.email = "michal@nierebinski.pl"
     gemspec.homepage = "https://github.com/Loyolny/Easter-Dates"
-    gemspec.executables = ["easter-dates"]
+    gemspec.executables = ["easter_dates"]
     gemspec.authors = ["Michał Nierebiński"]
   end
   Jeweler::GemcutterTasks.new
