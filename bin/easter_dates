@@ -1,5 +1,0 @@
-#! /usr/bin/env ruby
-require "rubygems"
-require "easter_dates"
-
-puts EasterDates.find(ARGV[0])
