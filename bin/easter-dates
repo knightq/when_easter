@@ -1,3 +1,5 @@
 #! /usr/bin/env ruby
 require "rubygems"
 require "easter_dates"
+
+puts EasterDates.at(ARGV[0])
