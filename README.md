@@ -8,9 +8,12 @@ Ever wondered when will Easter (or Passover, if you prefer) be next year? No wor
 ### Use
 	
 	$ easter_dates
-	In the year 2010, the Easter is on 24 April.
+	In the year 2010, the Roman Easter is on 24 April.
+	In the year 2010, the Greek Easter is on 24 April.
+	
 	$ easter_dates 2010
-	In the year 2010, the Easter is on 04 April.
+	In the year 2010, the Roman Easter is on 04 April.
+	In the year 2010, the Greek Easter is on 04 April.
 	
 ### License
 

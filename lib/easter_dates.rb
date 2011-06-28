@@ -1,9 +1,14 @@
 class EasterDates
-  #Todo: implement Greek Easter date finding algorhythm.
+  ## self.find
+  ##=> In the year 2010, the Roman Easter is on 24 April. \n In the year 2010, the Greek Easter is on 24 April.
   def self.find(year = nil)
-    date = self.roman_easter(year)
-    return "In the year #{date.year}, the Roman easter is on #{date.strftime("%d %B")}."
+    roman_date = self.roman_easter(year)
+    greek_date = self.greek_easter(year)
+    return "In the year #{roman_date.year}, the Roman easter is on #{roman_date.strftime("%d %B")}. \nIn the year #{greek_date.year}, the Roman easter is on #{greek_date.strftime("%d %B")}."
   end
+  
+  ## EasterDates.roman_easter
+  ## => Sun Apr 24 00:00:00 +0200 2011
   def self.roman_easter(year = nil)
     year = Time.now.year if year.nil?
     year = year.to_i if year.is_a?(String)
@@ -31,6 +36,24 @@ class EasterDates
       Time.local(year,3,e+21)
     else
       Time.local(year,4,e-10)
+    end
+  end
+  
+  ## EasterDates.greek_easter
+  ## => Sun Apr 24 00:00:00 +0200 2011
+  def self.greek_easter(year = nil)
+    year = Time.now.year if year.nil?
+    year = year.to_i if year.is_a?(String)
+    a = year % 19
+    b = year % 4
+    c = year % 7
+    d = (19 * a + 16) % 30
+    e = (2 * b + 4 * c + 6 * d) % 7;
+    easter = 3 + d + e;
+    if easter <= 30
+      Time.local(year, 4, easter)
+    else
+      Time.local(year, 5, (easter - 30))
     end
   end
 end
