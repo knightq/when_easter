@@ -8,7 +8,7 @@ begin
     gemspec.description = "A tool that calculates the dates of Roman and Greek Easter."
     gemspec.email = "michal@nierebinski.pl"
     gemspec.homepage = "https://github.com/Loyolny/when_easter"
-    gemspec.executables = ["when_easter"]
+    gemspec.executables = ["when_easter","when_roman_easter","when_greek_easter"]
     gemspec.authors = ["Michał Nierebiński"]
     gemspec.date = File.utime(0,0,'VERSION')
     

@@ -5,14 +5,14 @@
 
 Gem::Specification.new do |s|
   s.name = %q{when_easter}
-  s.version = "0.2.1"
+  s.version = "0.2.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = [%q{Michał Nierebiński}]
   s.date = %q{2011-06-28}
   s.description = %q{A tool that calculates the dates of Roman and Greek Easter.}
   s.email = %q{michal@nierebinski.pl}
-  s.executables = [%q{when_easter}]
+  s.executables = [%q{when_easter}, %q{when_roman_easter}, %q{when_greek_easter}]
   s.extra_rdoc_files = [
     "README.md"
   ]
