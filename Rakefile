@@ -10,9 +10,11 @@ begin
     gemspec.homepage = "https://github.com/Loyolny/Easter-Dates"
     gemspec.executables = ["easter_dates"]
     gemspec.authors = ["Michał Nierebiński"]
+    gemspec.date = File.utime(0,0,'VERSION')
+    
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
   puts "Ya don't have Jeweler gem installed. Install it with: sudo gem install jeweler"
 end
-Dir["#{File.dirname(__FILE__)}/tasks/*.rake"].sort.each { |ext| load ext }
+#Dir["#{File.dirname(__FILE__)}/tasks/*.rake"].sort.each { |ext| load ext }
