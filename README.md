@@ -15,7 +15,8 @@ Ever wondered when will Easter (or Passover, if you prefer) be next year? No wor
 	In the year 2010, the Roman Easter is on 04 April.
 	In the year 2010, the Greek Easter is on 04 April.
 	
-If you want to find only one date, you can aslo try
+If you want to find only one date, you can also try
+
 	$ when\_roman\_easter
 or
 	$ when\_greek\_easter
