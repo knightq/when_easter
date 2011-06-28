@@ -21,7 +21,8 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "bin/when_easter",
-    "lib/when_easter.rb"
+    "lib/when_easter.rb",
+    "when_easter.gemspec"
   ]
   s.homepage = %q{https://github.com/Loyolny/when_easter}
   s.require_paths = [%q{lib}]
