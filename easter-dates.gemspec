@@ -21,6 +21,7 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "bin/easter_dates",
+    "easter-dates.gemspec",
     "lib/easter_dates.rb"
   ]
   s.homepage = %q{https://github.com/Loyolny/Easter-Dates}
