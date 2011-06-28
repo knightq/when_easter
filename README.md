@@ -1,6 +1,6 @@
 # Easter Dates
 
-Ever wondered when will Easter (or Passover, if you prefer) be next year? No worries, this gem will help you, as soon as I release it
+Ever wondered when will Easter (or Passover, if you prefer) be next year? No worries, use easter\_dates!_
 
 ### Install
 	$ gem install easter_dates
