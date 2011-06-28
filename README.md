@@ -1,25 +1,26 @@
-# when\_easter
+# when_easter
 
-Ever wondered when will Easter (or Passover, if you prefer) be next year? No worries, use easter\_dates!
+Ever wondered when will Easter (or Passover, if you prefer) be next year? No worries, use when_easter!
 
 ### Install
 	$ gem install when_easter
 	
 ### Use
 	
-	$ when\_easter
+	$ when_easter
 	In the year 2010, the Roman Easter is on 24 April.
 	In the year 2010, the Greek Easter is on 24 April.
 	
-	$ when\_easter 2010
+	$ when_easter 2010
 	In the year 2010, the Roman Easter is on 04 April.
 	In the year 2010, the Greek Easter is on 04 April.
 	
 If you want to find only one date, you can also try
 
-	$ when\_roman\_easter
+	$ when_roman_easter
 or
-	$ when\_greek\_easter
+
+	$ when_greek_easter
 ### License
 
 Released under the MIT license.
