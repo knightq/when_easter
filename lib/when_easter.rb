@@ -1,14 +1,14 @@
 class WhenEaster
-  ## WhenEaster.find
-  ##=> In the year 2011, the Roman Easter is on 24 April. \n In the year 2011, the Greek Easter is on 24 April.
+  # WhenEaster.find
+  #=> In the year 2011, the Roman Easter is on 24 April. \n In the year 2011, the Greek Easter is on 24 April.
   def self.find(year = nil)
     roman_date = self.roman_easter(year)
     greek_date = self.greek_easter(year)
     return "In the year #{roman_date.year}, the Roman Easter is on #{roman_date.strftime("%d %B")}. \nIn the year #{greek_date.year}, the Roman Easter is on #{greek_date.strftime("%d %B")}."
   end
   
-  ## WhenEaster.find_roman
-  ##=> In the year 2011, the Roman Easter is on 24 April.
+  # WhenEaster.find_roman
+  #=> In the year 2011, the Roman Easter is on 24 April.
   def self.find_roman(year = nil)
     date = self.roman_easter(year)
     return "In the year #{date.year}, the Roman Easter is on #{date.strftime("%d %B")}."
@@ -20,8 +20,8 @@ class WhenEaster
     date = self.greek_easter(year)
     return "In the year #{date.year}, the Greek Easter is on #{date.strftime("%d %B")}."
   end
-  ## WhenEaster.roman_easter
-  ## => Sun Apr 24 00:00:00 +0200 2011
+  # WhenEaster.roman_easter
+  # => Sun Apr 24 00:00:00 +0200 2011
   def self.roman_easter(year = nil)
     year = Time.now.year if year.nil?
     year = year.to_i if year.is_a?(String)
@@ -52,8 +52,8 @@ class WhenEaster
     end
   end
   
-  ## WhenEaster.greek_easter
-  ## => Sun Apr 24 00:00:00 +0200 2011
+  # WhenEaster.greek_easter
+  # => Sun Apr 24 00:00:00 +0200 2011
   def self.greek_easter(year = nil)
     year = Time.now.year if year.nil?
     year = year.to_i if year.is_a?(String)
