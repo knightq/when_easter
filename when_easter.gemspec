@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{when_easter}
-  s.version = "0.2.3"
+  s.version = "0.2.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = [%q{Michał Nierebiński}]
-  s.date = %q{2011-06-28}
+  s.date = %q{2011-07-06}
   s.description = %q{A tool that calculates the dates of Roman and Greek Easter.}
   s.email = %q{michal@nierebinski.pl}
   s.executables = [%q{when_easter}, %q{when_roman_easter}, %q{when_greek_easter}]
@@ -23,6 +23,40 @@ Gem::Specification.new do |s|
     "bin/when_easter",
     "bin/when_greek_easter",
     "bin/when_roman_easter",
+    "doc/Rakefile.html",
+    "doc/VERSION.html",
+    "doc/WhenEaster.html",
+    "doc/bin/when_easter.html",
+    "doc/bin/when_greek_easter.html",
+    "doc/bin/when_roman_easter.html",
+    "doc/created.rid",
+    "doc/images/brick.png",
+    "doc/images/brick_link.png",
+    "doc/images/bug.png",
+    "doc/images/bullet_black.png",
+    "doc/images/bullet_toggle_minus.png",
+    "doc/images/bullet_toggle_plus.png",
+    "doc/images/date.png",
+    "doc/images/find.png",
+    "doc/images/loadingAnimation.gif",
+    "doc/images/macFFBgHack.png",
+    "doc/images/package.png",
+    "doc/images/page_green.png",
+    "doc/images/page_white_text.png",
+    "doc/images/page_white_width.png",
+    "doc/images/plugin.png",
+    "doc/images/ruby.png",
+    "doc/images/tag_green.png",
+    "doc/images/wrench.png",
+    "doc/images/wrench_orange.png",
+    "doc/images/zoom.png",
+    "doc/index.html",
+    "doc/js/darkfish.js",
+    "doc/js/jquery.js",
+    "doc/js/quicksearch.js",
+    "doc/js/thickbox-compressed.js",
+    "doc/lib/when_easter_rb.html",
+    "doc/rdoc.css",
     "lib/when_easter.rb",
     "when_easter.gemspec"
   ]

@@ -4,7 +4,7 @@ class WhenEaster
   def self.find(year = nil)
     roman_date = self.roman_easter(year)
     greek_date = self.greek_easter(year)
-    return "In the year #{roman_date.year}, the Roman Easter is on #{roman_date.strftime("%d %B")}. \nIn the year #{greek_date.year}, the Roman Easter is on #{greek_date.strftime("%d %B")}."
+    return "In the year #{roman_date.year}, the Roman Easter is on #{roman_date.strftime("%d %B")}. \nIn the year #{greek_date.year}, the Greek Easter is on #{greek_date.strftime("%d %B")}."
   end
   
   # WhenEaster.find_roman
