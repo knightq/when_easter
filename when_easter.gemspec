@@ -33,7 +33,8 @@ Gem::Specification.new do |s|
     "features/when_easter.feature",
     "lib/when_easter.rb",
     "spec/spec_helper.rb",
-    "spec/when_easter_spec.rb"
+    "spec/when_easter_spec.rb",
+    "when_easter.gemspec"
   ]
   s.homepage = %q{http://github.com/Loyolny/when_easter}
   s.licenses = [%q{MIT}]
