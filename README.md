@@ -2,7 +2,7 @@
 
 Ever wondered when will Easter (or Passover, if you prefer) be next year? No worries, use when_easter!
 
-It's still being developed and refactored, so beware ;)
+It's still being developed and refactored, so beware ;) Binaries work well though.
 ### Install
 	$ gem install when_easter
 	
