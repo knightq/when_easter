@@ -2,4 +2,4 @@
 require "rubygems"
 require "when_easter"
 calendar = WhenEaster::EasterCalendar.new(ARGV[0])
-puts WhenEaster.find_roman
+puts calendar.find_roman
