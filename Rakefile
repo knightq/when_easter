@@ -17,10 +17,11 @@ Jeweler::Tasks.new do |gem|
   gem.name = "when_easter"
   gem.homepage = "http://github.com/Loyolny/when_easter"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Get the date of Roman and Greek Easter}
+  gem.description = %Q{A tool that calculates the dates of Roman and Greek Easter.}
   gem.email = "michal@nierebinski.pl"
   gem.authors = ["Michał Nierebiński"]
+  gem.date = File.utime(0,0,'VERSION')
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
@@ -50,3 +51,4 @@ Rake::RDocTask.new do |rdoc|
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
+#Dir["#{File.dirname(__FILE__)}/tasks/*.rake"].sort.each { |ext| load ext }

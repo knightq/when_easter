@@ -1,0 +1,5 @@
+#! /usr/bin/env ruby
+require "rubygems"
+require "when_easter"
+calendar = WhenEaster::EasterCalendar.new(ARGV[0])
+puts WhenEaster.find_greek
