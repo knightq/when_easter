@@ -8,7 +8,7 @@ It's still being developed and refactored, so beware ;) Binaries work well thoug
 	
 ### Use
 	
-	$ when_easter
+	$ when_easter #the default year is current year
 	In the year 2011, the Roman Easter is on 24 April.
 	In the year 2011, the Greek Easter is on 24 April.
 	In the year 2010 the distance between Roman and Greek Easter is 0 week(s).
@@ -33,7 +33,11 @@ If you wish, you can also use WhenEaster::EasterCalendar class and its methods t
 
 	
 	roman_date = WhenEaster::EasterCalendar.find_roman_easter_date(2010)
-	greek date is similiar - you can get it by replacing roman with greek
+or, if you wan't to play more with EasterCalendar instance, 
+	
+	my_calendar = WhenEaster::EasterCalendar.new(2010) #if you want to get data for the year 2010
+	another_roman_date = 	my_calendar.roman_easter
+greek date is similiar - you can get it by replacing roman with greek
 	
 And get
 

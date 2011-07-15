@@ -13,10 +13,10 @@ When /^I ask for the year$/ do
   @year = @easter_calendar.year
 end
 When /^I find roman easter$/ do
-  @roman_date = @easter_calendar.class.find_roman_easter_date(@easter_calendar.year)
+  @roman_date = @easter_calendar.roman_easter
 end
 When /^I find greek easter$/ do
-  @greek_date = @easter_calendar.class.find_greek_easter_date(@easter_calendar.year)
+  @greek_date = @easter_calendar.greek_easter
 end
 Then /^I should see year (\d+) in an easter_calendar$/ do |year|
   @year.should == year.to_i

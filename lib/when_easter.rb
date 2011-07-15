@@ -1,24 +1,24 @@
 module WhenEaster
   class EasterCalendar
 
-    attr_reader :year
+    attr_reader :year, :roman_easter, :greek_easter, :distance_in_weeks
     def initialize(year = nil)
       @year = Time.now.year if year.nil?
       @year = year if year.is_a?(Integer)
       @year = year.to_i if year.is_a?(String)
-    end
-    def distance_in_weeks
-      ((self.class.find_greek_easter_date(year) - self.class.find_roman_easter_date(year))/3600/24/7).to_i
+      @roman_easter = self.class.find_roman_easter_date(@year)
+      @greek_easter = self.class.find_greek_easter_date(@year)
+      @distance_in_weeks = ((@greek_easter-@roman_easter)/3600/24/7).to_i
     end
     def find
       find_roman+"\n"+find_greek+"\n"+find_distance
     end
     
     def find_roman
-      "In the year #{@year} the Roman Easter is on #{self.class.find_roman_easter_date(@year).strftime("%d %B")}."
+      "In the year #{@year} the Roman Easter is on #{@roman_easter.strftime("%d %B")}."
     end
     def find_greek
-      "In the year #{@year} the Greek Easter is on #{self.class.find_greek_easter_date(@year).strftime("%d %B")}."
+      "In the year #{@year} the Greek Easter is on #{@greek_easter.strftime("%d %B")}."
     end
     def find_distance
       "In the year #{@year} the distance between Roman and Greek Easter is #{distance_in_weeks} week(s)."
