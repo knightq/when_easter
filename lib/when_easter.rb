@@ -1,4 +1,7 @@
+require "when_easter/version"
+
 module WhenEaster
+  # Your code goes here...
   class EasterCalendar
 
     attr_reader :year, :roman_easter, :greek_easter, :distance_in_weeks
@@ -13,7 +16,7 @@ module WhenEaster
     def find
       find_roman+"\n"+find_greek+"\n"+find_distance
     end
-    
+
     def find_roman
       "In the year #{@year} the Roman Easter is on #{@roman_easter.strftime("%d %B")}."
     end
@@ -30,7 +33,7 @@ module WhenEaster
       l = (((year - 1400) / 100) * 8) / 25
 
       p_2 = (3-11*g +s -l) % 30
-      if p_2 == 29 || (p_2 == 28 && g > 11) 
+      if p_2 == 29 || (p_2 == 28 && g > 11)
         p = p_2 -1
       else
         p= p_2
@@ -45,7 +48,7 @@ module WhenEaster
       x = (x_2 -1) % 7 +1
       e = p+x
 
-      if e < 11 
+      if e < 11
         Time.local(year,3,e+21)
       else
         Time.local(year,4,e-10)
@@ -67,4 +70,5 @@ module WhenEaster
       end
     end
   end
+
 end
